@@ -1,0 +1,73 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Library App</title>
+        <link rel="icon" href="/images/fevicon.png" type="image/png" />
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Scheherazade" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body id="container">
+        <header>
+            <h1>MY LIBRARY</h1>
+        </header>
+        <article>
+            <section id="add-section">
+                <button id="add-book">ADD BOOK</button>
+            </section>
+            
+            <section>
+                <div  id="bookDisplay">
+                    <table id="book-table">
+                        <thead>
+                            <tr>
+                                <th class="table-title">Title</th>
+                                <th class="table-author">Author</th>
+                                <th class="table-pages">Pages</th>
+                                <th class="table-read">Read</th>
+                                <th class="table-delete">Delete</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </section>
+            
+            <section id="book-details">
+                <div id="details-container">
+                    <p>Enter the following details of the book</p>
+                    
+                    <label for="title">Title: </label>
+                    <br>
+                    <input name="title" id="title" required placeholder="Add title" value="">
+                    <br>
+                    <br>
+                    <label for="author">Authour: </label>
+                    <input name="author" id="author" required placeholder="Add author" value="">
+                    <br>
+                    <br>
+                    <label for="pages">No. of Pages: </label>
+                    <input name="pages" id="pages" type="number" required placeholder="Add no. of pages" value="">
+                    <br>
+                    <br>
+                    Have you read the book?
+                    <input name="read" id="read" type="checkbox" value="true" checked>
+                    <br>
+                    <br>
+                    <button id="submit" value=Submit>SUBMIT</button>
+                    <button id="cancel" value="cancel">CANCEL</button>
+                    
+                </div>
+            </section>
+        </article>
+        
+        
+        <div>
+            <p id="libInfo"></p>
+        </div>
+        
+        <script type="text/javascript" src="mylib.js">
+        </script>
+    </body>
+
+</html>
